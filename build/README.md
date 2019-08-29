@@ -2,6 +2,7 @@
 
 > Шаблон письма росбаннка
 > alt в изображения и title в ссылках нужны чтобы не попадать в спам
+> {{map_token}} == pk.eyJ1IjoiY3liZXJib2JlciIsImEiOiJjamZqOWNjZHA1bnhvMnJudmRmMzhyYzZyIn0.QgJ9bFyfn5WWUXWn9x2ngg
 ## Ссылка на карту
 
 ```html
@@ -30,16 +31,15 @@
 ## Итерируемый документ
 
 ```html
- <div class="list">
-    <div class="list-marker"></div>
-    <div class="list-text">{doc_name}</div>
-</div>
-```
-На выходе
-
-```html
- <div class="list">
-    <div class="list-marker"></div>
-    <div class="list-text">Справка 2-НДФЛ</div>
-</div>
+    <div class="body-list">
+        <p class="list-header">При наличии на руках справки 2-НДФЛ</p>
+        <div class="list">
+            <div class="list-marker"></div>
+            <div class="list-text">Справка 2-НДФЛ</div>
+        </div>
+        <div class="list">
+            <div class="list-marker"></div>
+            <div class="list-text">Паспорт гражданина РФ</div>
+        </div>
+    </div>
 ```
