@@ -1,45 +1,22 @@
 # Rosbank Newsletter
 
-> Шаблон письма росбаннка
-> alt в изображения и title в ссылках нужны чтобы не попадать в спам
-> {{map_token}} == pk.eyJ1IjoiY3liZXJib2JlciIsImEiOiJjamZqOWNjZHA1bnhvMnJudmRmMzhyYzZyIn0.QgJ9bFyfn5WWUXWn9x2ngg
-## Ссылка на карту
 
-```html
-    <a href="https://yandex.ru/maps/?pt={lon},{lat}&z=17&l=map" target="_blank" title="{Office address} - открыть в «Яндекс Картах»">
-```
-
-На выходе
-
-```html
-    <a href="https://yandex.ru/maps/?pt=37.648456,55.772168&z=17&l=map" target="_blank" title="Москва, ул. Маши Порываевой 34 - открыть в «Яндекс Картах»">
-```
-
-
-## Mapbox Static Api
-
-```html
-    <img class="map" src="https://api.mapbox.com/styles/v1/mapbox/light-v10/static/pin-l-circle+e60028({lon},{lat})/{lon},{lat},16,0,0/580x450?access_token=pk.eyJ1IjoiY3liZXJib2JlciIsImEiOiJjamZqOWNjZHA1bnhvMnJudmRmMzhyYzZyIn0.QgJ9bFyfn5WWUXWn9x2ngg" mc:edit="article_1_image" class="image image--upper" width="580" alt="{Office address}" />
-```
-
-На выходе
-
-```html
-   <img class="map" src="https://api.mapbox.com/styles/v1/mapbox/light-v10/static/pin-l-circle+e60028(37.648456,55.772168)/37.648456,55.772168,16,0,0/580x450?access_token=pk.eyJ1IjoiY3liZXJib2JlciIsImEiOiJjamZqOWNjZHA1bnhvMnJudmRmMzhyYzZyIn0.QgJ9bFyfn5WWUXWn9x2ngg" mc:edit="article_1_image" class="image image--upper" width="580" alt="Москва, ул. Маши Порываевой 34" />
-```
 
 ## Итерируемый документ
 
 ```html
-    <div class="body-list">
-        <p class="list-header">При наличии на руках справки 2-НДФЛ</p>
-        <div class="list">
-            <div class="list-marker"></div>
-            <div class="list-text">Справка 2-НДФЛ</div>
-        </div>
-        <div class="list">
-            <div class="list-marker"></div>
-            <div class="list-text">Паспорт гражданина РФ</div>
-        </div>
-    </div>
+<div class="body-list" style="margin-bottom:32px">
+<p class="list-header" style="font-weight:400;padding:0;margin:0;Margin:0;text-align:left;margin-bottom:10px;Margin-bottom:10px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:Helvetica,Arial,sans-serif;font-size:16px;letter-spacing:.24px;line-height:28px;color:#282423">При наличии на руках справки 2-НДФЛ</p>
+<div class="list" style="-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:14px;letter-spacing:.24px;line-height:21px;position:relative;font-family:Helvetica,Arial,sans-serif;margin-bottom:10px">
+<div class="list-marker" style="width:17px;height:2px;background:#282423;display:inline-block;vertical-align:middle;margin-right:13px"></div>
+<div class="list-text" style="display:inline;vertical-align:middle">Справка 2-НДФЛ/div>
+</div>
+<div class="list" style="-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:14px;letter-spacing:.24px;line-height:21px;position:relative;font-family:Helvetica,Arial,sans-serif;margin-bottom:10px">
+<div class="list-marker" style="width:17px;height:2px;background:#282423;display:inline-block;vertical-align:middle;margin-right:13px"></div>
+<div class="list-text" style="display:inline;vertical-align:middle">Паспорт гражданина РФ</div>
+</div>
+</div>
+
 ```
+
+> на все остальное ссылайся в index_marked.html
