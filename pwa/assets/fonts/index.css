@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Rit-Graphik';
+    font-display: swap;
+    src: url('Graphik-Regular-Cy-Web.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Rit-Graphik';
+    font-display: swap;
+    src: url('Graphik-Light-Cy-Web.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Rit-Graphik';
+    font-display: swap;
+    src: url('Graphik-Bold-Cy-Web.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Rit-Graphik';
+    font-display: swap;
+    src: url('Graphik-Medium-Cy-Web.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Rit-Graphik';
+    font-display: swap;
+    src: url('Graphik-Semibold-Cy-Web.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal
+}
+
+body {
+    margin: 0;
+    /* This is a font-stack that tries to use the system-default sans-serifs first */
+    font-family: "Rit-Graphik", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
